@@ -49,7 +49,15 @@ def root():
 @app.get("/health")
 def health():
     return {"status": "ok"}
-
+@app.get("/debug-env")
+def debug_env():
+    key = os.environ.get("GEMINI_API_KEY", "")
+    return {
+        "key_present": bool(key),
+        "key_length": len(key),
+        "key_prefix": key[:6] if key else None,
+        "all_env_keys_containing_gemini": [k for k in os.environ.keys() if "GEMINI" in k.upper()],
+    }
 
 @app.post("/chat")
 def chat(req: ChatRequest):
