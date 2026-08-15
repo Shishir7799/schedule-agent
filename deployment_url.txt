@@ -1,0 +1,15 @@
+Agentic RAG Schedule Assistant — Deployment Submission
+========================================================
+
+Playground URL (fill in after deploying on Render):
+https://<your-render-service-name>.onrender.com/agent/playground
+
+Base API URL:
+https://<your-render-service-name>.onrender.com
+
+Repo:
+https://github.com/<your-username>/schedule-agent
+
+Notes:
+- Replace <your-render-service-name> and <your-username> above once deployed.
+- See README.md in the project for exact Render deployment steps.

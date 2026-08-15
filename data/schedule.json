@@ -1,0 +1,482 @@
+[
+  {
+    "id": "063e9854",
+    "title": "Write blog post",
+    "type": "task",
+    "date": "2026-08-15",
+    "start_time": "09:30",
+    "end_time": "10:00",
+    "location": "Zoom",
+    "description": "Write blog post (task) scheduled on Saturday, August 15 from 09:30 AM to 10:00 AM at Zoom."
+  },
+  {
+    "id": "e2e5c97d",
+    "title": "Product Review",
+    "type": "meeting",
+    "date": "2026-08-15",
+    "start_time": "10:15",
+    "end_time": "10:45",
+    "location": "Google Meet",
+    "description": "Product Review (meeting) scheduled on Saturday, August 15 from 10:15 AM to 10:45 AM at Google Meet."
+  },
+  {
+    "id": "6311416a",
+    "title": "Write blog post",
+    "type": "task",
+    "date": "2026-08-17",
+    "start_time": "13:30",
+    "end_time": "14:00",
+    "location": "Online",
+    "description": "Write blog post (task) scheduled on Monday, August 17 from 01:30 PM to 02:00 PM at Online."
+  },
+  {
+    "id": "06098310",
+    "title": "Design Review",
+    "type": "meeting",
+    "date": "2026-08-18",
+    "start_time": "09:00",
+    "end_time": "09:45",
+    "location": "Google Meet",
+    "description": "Design Review (meeting) scheduled on Tuesday, August 18 from 09:00 AM to 09:45 AM at Google Meet."
+  },
+  {
+    "id": "9409b1a4",
+    "title": "Finish project report",
+    "type": "task",
+    "date": "2026-08-18",
+    "start_time": "13:30",
+    "end_time": "14:30",
+    "location": "Client Office",
+    "description": "Finish project report (task) scheduled on Tuesday, August 18 from 01:30 PM to 02:30 PM at Client Office."
+  },
+  {
+    "id": "7fda69fd",
+    "title": "Product Review",
+    "type": "meeting",
+    "date": "2026-08-19",
+    "start_time": "17:00",
+    "end_time": "18:00",
+    "location": "Online",
+    "description": "Product Review (meeting) scheduled on Wednesday, August 19 from 05:00 PM to 06:00 PM at Online."
+  },
+  {
+    "id": "722be2fe",
+    "title": "Renew gym membership",
+    "type": "task",
+    "date": "2026-08-20",
+    "start_time": "09:00",
+    "end_time": "10:30",
+    "location": "Home",
+    "description": "Renew gym membership (task) scheduled on Thursday, August 20 from 09:00 AM to 10:30 AM at Home."
+  },
+  {
+    "id": "9cd73dd0",
+    "title": "Physiotherapy Session",
+    "type": "appointment",
+    "date": "2026-08-20",
+    "start_time": "09:30",
+    "end_time": "10:00",
+    "location": "Community Hall",
+    "description": "Physiotherapy Session (appointment) scheduled on Thursday, August 20 from 09:30 AM to 10:00 AM at Community Hall."
+  },
+  {
+    "id": "39856617",
+    "title": "Car Service",
+    "type": "appointment",
+    "date": "2026-08-21",
+    "start_time": "09:30",
+    "end_time": "10:00",
+    "location": "Client Office",
+    "description": "Car Service (appointment) scheduled on Friday, August 21 from 09:30 AM to 10:00 AM at Client Office."
+  },
+  {
+    "id": "b95a8cd9",
+    "title": "Leadership Training",
+    "type": "workshop",
+    "date": "2026-08-21",
+    "start_time": "10:00",
+    "end_time": "13:00",
+    "location": "Community Hall",
+    "description": "Leadership Training (workshop) scheduled on Friday, August 21 from 10:00 AM to 01:00 PM at Community Hall."
+  },
+  {
+    "id": "67b64dcd",
+    "title": "Quarterly Planning",
+    "type": "meeting",
+    "date": "2026-08-22",
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "location": "Office - Room 204",
+    "description": "Quarterly Planning (meeting) scheduled on Saturday, August 22 from 04:00 PM to 05:00 PM at Office - Room 204."
+  },
+  {
+    "id": "d49876ab",
+    "title": "Marketing Sync",
+    "type": "meeting",
+    "date": "2026-08-23",
+    "start_time": "14:30",
+    "end_time": "15:30",
+    "location": "Conference Room A",
+    "description": "Marketing Sync (meeting) scheduled on Sunday, August 23 from 02:30 PM to 03:30 PM at Conference Room A."
+  },
+  {
+    "id": "6068bf64",
+    "title": "Design Review",
+    "type": "meeting",
+    "date": "2026-08-23",
+    "start_time": "17:00",
+    "end_time": "17:30",
+    "location": "Zoom",
+    "description": "Design Review (meeting) scheduled on Sunday, August 23 from 05:00 PM to 05:30 PM at Zoom."
+  },
+  {
+    "id": "3920b051",
+    "title": "Cloud Architecture Workshop",
+    "type": "workshop",
+    "date": "2026-08-24",
+    "start_time": "10:00",
+    "end_time": "13:00",
+    "location": "Home",
+    "description": "Cloud Architecture Workshop (workshop) scheduled on Monday, August 24 from 10:00 AM to 01:00 PM at Home."
+  },
+  {
+    "id": "6b22df78",
+    "title": "Investor Update Call",
+    "type": "meeting",
+    "date": "2026-08-24",
+    "start_time": "15:30",
+    "end_time": "16:30",
+    "location": "Clinic",
+    "description": "Investor Update Call (meeting) scheduled on Monday, August 24 from 03:30 PM to 04:30 PM at Clinic."
+  },
+  {
+    "id": "6ef95571",
+    "title": "Pay electricity bill",
+    "type": "task",
+    "date": "2026-08-24",
+    "start_time": "20:00",
+    "end_time": "21:00",
+    "location": "Office - Room 204",
+    "description": "Pay electricity bill (task) scheduled on Monday, August 24 from 08:00 PM to 09:00 PM at Office - Room 204."
+  },
+  {
+    "id": "2e7ea1a3",
+    "title": "Haircut",
+    "type": "appointment",
+    "date": "2026-08-25",
+    "start_time": "10:30",
+    "end_time": "11:00",
+    "location": "Google Meet",
+    "description": "Haircut (appointment) scheduled on Tuesday, August 25 from 10:30 AM to 11:00 AM at Google Meet."
+  },
+  {
+    "id": "e60eb621",
+    "title": "Client Sync Call",
+    "type": "meeting",
+    "date": "2026-08-25",
+    "start_time": "10:45",
+    "end_time": "11:15",
+    "location": "Zoom",
+    "description": "Client Sync Call (meeting) scheduled on Tuesday, August 25 from 10:45 AM to 11:15 AM at Zoom."
+  },
+  {
+    "id": "719033e0",
+    "title": "Cross-team Alignment",
+    "type": "meeting",
+    "date": "2026-08-25",
+    "start_time": "14:30",
+    "end_time": "15:30",
+    "location": "Zoom",
+    "description": "Cross-team Alignment (meeting) scheduled on Tuesday, August 25 from 02:30 PM to 03:30 PM at Zoom."
+  },
+  {
+    "id": "0acc959f",
+    "title": "Budget Discussion",
+    "type": "meeting",
+    "date": "2026-08-26",
+    "start_time": "10:45",
+    "end_time": "11:15",
+    "location": "Client Office",
+    "description": "Budget Discussion (meeting) scheduled on Wednesday, August 26 from 10:45 AM to 11:15 AM at Client Office."
+  },
+  {
+    "id": "777673b7",
+    "title": "Investor Update Call",
+    "type": "meeting",
+    "date": "2026-08-26",
+    "start_time": "17:30",
+    "end_time": "18:30",
+    "location": "Community Hall",
+    "description": "Investor Update Call (meeting) scheduled on Wednesday, August 26 from 05:30 PM to 06:30 PM at Community Hall."
+  },
+  {
+    "id": "0f58dda4",
+    "title": "Write blog post",
+    "type": "task",
+    "date": "2026-08-27",
+    "start_time": "09:30",
+    "end_time": "11:00",
+    "location": "Conference Room A",
+    "description": "Write blog post (task) scheduled on Thursday, August 27 from 09:30 AM to 11:00 AM at Conference Room A."
+  },
+  {
+    "id": "7acbc449",
+    "title": "Eye Checkup",
+    "type": "appointment",
+    "date": "2026-08-27",
+    "start_time": "16:00",
+    "end_time": "16:30",
+    "location": "Google Meet",
+    "description": "Eye Checkup (appointment) scheduled on Thursday, August 27 from 04:00 PM to 04:30 PM at Google Meet."
+  },
+  {
+    "id": "ce142b8f",
+    "title": "Prepare slide deck",
+    "type": "task",
+    "date": "2026-08-27",
+    "start_time": "18:00",
+    "end_time": "19:30",
+    "location": "Conference Room A",
+    "description": "Prepare slide deck (task) scheduled on Thursday, August 27 from 06:00 PM to 07:30 PM at Conference Room A."
+  },
+  {
+    "id": "865e9aff",
+    "title": "Doctor Checkup",
+    "type": "appointment",
+    "date": "2026-08-28",
+    "start_time": "09:30",
+    "end_time": "10:00",
+    "location": "Google Meet",
+    "description": "Doctor Checkup (appointment) scheduled on Friday, August 28 from 09:30 AM to 10:00 AM at Google Meet."
+  },
+  {
+    "id": "67fb68ed",
+    "title": "Bank Visit",
+    "type": "appointment",
+    "date": "2026-08-28",
+    "start_time": "10:00",
+    "end_time": "10:30",
+    "location": "Home",
+    "description": "Bank Visit (appointment) scheduled on Friday, August 28 from 10:00 AM to 10:30 AM at Home."
+  },
+  {
+    "id": "a336e712",
+    "title": "Haircut",
+    "type": "appointment",
+    "date": "2026-08-28",
+    "start_time": "10:30",
+    "end_time": "11:00",
+    "location": "Conference Room A",
+    "description": "Haircut (appointment) scheduled on Friday, August 28 from 10:30 AM to 11:00 AM at Conference Room A."
+  },
+  {
+    "id": "7eeca1ee",
+    "title": "Data Engineering Workshop",
+    "type": "workshop",
+    "date": "2026-08-29",
+    "start_time": "10:00",
+    "end_time": "12:00",
+    "location": "Client Office",
+    "description": "Data Engineering Workshop (workshop) scheduled on Saturday, August 29 from 10:00 AM to 12:00 PM at Client Office."
+  },
+  {
+    "id": "18895b0f",
+    "title": "Grocery shopping",
+    "type": "task",
+    "date": "2026-08-30",
+    "start_time": "20:30",
+    "end_time": "21:00",
+    "location": "Home",
+    "description": "Grocery shopping (task) scheduled on Sunday, August 30 from 08:30 PM to 09:00 PM at Home."
+  },
+  {
+    "id": "f72ab871",
+    "title": "Cross-team Alignment",
+    "type": "meeting",
+    "date": "2026-08-31",
+    "start_time": "15:15",
+    "end_time": "16:15",
+    "location": "Home",
+    "description": "Cross-team Alignment (meeting) scheduled on Monday, August 31 from 03:15 PM to 04:15 PM at Home."
+  },
+  {
+    "id": "87efb13a",
+    "title": "Sprint Planning",
+    "type": "meeting",
+    "date": "2026-09-02",
+    "start_time": "09:30",
+    "end_time": "10:00",
+    "location": "Conference Room A",
+    "description": "Sprint Planning (meeting) scheduled on Wednesday, September 02 from 09:30 AM to 10:00 AM at Conference Room A."
+  },
+  {
+    "id": "53640cdb",
+    "title": "Quarterly Planning",
+    "type": "meeting",
+    "date": "2026-09-02",
+    "start_time": "14:15",
+    "end_time": "15:15",
+    "location": "Office - Room 204",
+    "description": "Quarterly Planning (meeting) scheduled on Wednesday, September 02 from 02:15 PM to 03:15 PM at Office - Room 204."
+  },
+  {
+    "id": "8e63c1a5",
+    "title": "Consultation Call",
+    "type": "appointment",
+    "date": "2026-09-03",
+    "start_time": "10:30",
+    "end_time": "11:00",
+    "location": "Clinic",
+    "description": "Consultation Call (appointment) scheduled on Thursday, September 03 from 10:30 AM to 11:00 AM at Clinic."
+  },
+  {
+    "id": "0f90a8c4",
+    "title": "Sprint Planning",
+    "type": "meeting",
+    "date": "2026-09-03",
+    "start_time": "16:45",
+    "end_time": "17:30",
+    "location": "Clinic",
+    "description": "Sprint Planning (meeting) scheduled on Thursday, September 03 from 04:45 PM to 05:30 PM at Clinic."
+  },
+  {
+    "id": "fddd77f2",
+    "title": "Dentist Appointment",
+    "type": "appointment",
+    "date": "2026-09-04",
+    "start_time": "09:00",
+    "end_time": "09:30",
+    "location": "Clinic",
+    "description": "Dentist Appointment (appointment) scheduled on Friday, September 04 from 09:00 AM to 09:30 AM at Clinic."
+  },
+  {
+    "id": "79c97a63",
+    "title": "Data Engineering Workshop",
+    "type": "workshop",
+    "date": "2026-09-05",
+    "start_time": "10:00",
+    "end_time": "13:00",
+    "location": "Online",
+    "description": "Data Engineering Workshop (workshop) scheduled on Saturday, September 05 from 10:00 AM to 01:00 PM at Online."
+  },
+  {
+    "id": "18466fa6",
+    "title": "Review pull requests",
+    "type": "task",
+    "date": "2026-09-05",
+    "start_time": "13:00",
+    "end_time": "13:30",
+    "location": "Conference Room A",
+    "description": "Review pull requests (task) scheduled on Saturday, September 05 from 01:00 PM to 01:30 PM at Conference Room A."
+  },
+  {
+    "id": "de4ed9d4",
+    "title": "Consultation Call",
+    "type": "appointment",
+    "date": "2026-09-06",
+    "start_time": "17:00",
+    "end_time": "17:30",
+    "location": "Zoom",
+    "description": "Consultation Call (appointment) scheduled on Sunday, September 06 from 05:00 PM to 05:30 PM at Zoom."
+  },
+  {
+    "id": "caa1cd21",
+    "title": "AI/ML Bootcamp",
+    "type": "workshop",
+    "date": "2026-09-07",
+    "start_time": "10:00",
+    "end_time": "12:00",
+    "location": "Office - Room 204",
+    "description": "AI/ML Bootcamp (workshop) scheduled on Monday, September 07 from 10:00 AM to 12:00 PM at Office - Room 204."
+  },
+  {
+    "id": "adb5a59e",
+    "title": "Robotics Lab Session",
+    "type": "workshop",
+    "date": "2026-09-07",
+    "start_time": "10:00",
+    "end_time": "13:00",
+    "location": "Zoom",
+    "description": "Robotics Lab Session (workshop) scheduled on Monday, September 07 from 10:00 AM to 01:00 PM at Zoom."
+  },
+  {
+    "id": "91f73753",
+    "title": "Budget Discussion",
+    "type": "meeting",
+    "date": "2026-09-08",
+    "start_time": "11:45",
+    "end_time": "12:30",
+    "location": "Clinic",
+    "description": "Budget Discussion (meeting) scheduled on Tuesday, September 08 from 11:45 AM to 12:30 PM at Clinic."
+  },
+  {
+    "id": "6ac7da0b",
+    "title": "Team Standup",
+    "type": "meeting",
+    "date": "2026-09-09",
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "location": "Community Hall",
+    "description": "Team Standup (meeting) scheduled on Wednesday, September 09 from 03:00 PM to 04:00 PM at Community Hall."
+  },
+  {
+    "id": "b90e94d1",
+    "title": "Write blog post",
+    "type": "task",
+    "date": "2026-09-09",
+    "start_time": "20:00",
+    "end_time": "20:30",
+    "location": "Client Office",
+    "description": "Write blog post (task) scheduled on Wednesday, September 09 from 08:00 PM to 08:30 PM at Client Office."
+  },
+  {
+    "id": "6389c4fd",
+    "title": "1:1 with Manager",
+    "type": "meeting",
+    "date": "2026-09-11",
+    "start_time": "09:00",
+    "end_time": "10:00",
+    "location": "Home",
+    "description": "1:1 with Manager (meeting) scheduled on Friday, September 11 from 09:00 AM to 10:00 AM at Home."
+  },
+  {
+    "id": "e30de706",
+    "title": "Career Development Workshop",
+    "type": "workshop",
+    "date": "2026-09-11",
+    "start_time": "10:00",
+    "end_time": "12:00",
+    "location": "Conference Room A",
+    "description": "Career Development Workshop (workshop) scheduled on Friday, September 11 from 10:00 AM to 12:00 PM at Conference Room A."
+  },
+  {
+    "id": "cdd8f12f",
+    "title": "Car Service",
+    "type": "appointment",
+    "date": "2026-09-12",
+    "start_time": "17:00",
+    "end_time": "17:30",
+    "location": "Google Meet",
+    "description": "Car Service (appointment) scheduled on Saturday, September 12 from 05:00 PM to 05:30 PM at Google Meet."
+  },
+  {
+    "id": "2bfabf1d",
+    "title": "Write blog post",
+    "type": "task",
+    "date": "2026-09-13",
+    "start_time": "18:30",
+    "end_time": "19:00",
+    "location": "Community Hall",
+    "description": "Write blog post (task) scheduled on Sunday, September 13 from 06:30 PM to 07:00 PM at Community Hall."
+  },
+  {
+    "id": "8787bf8b",
+    "title": "New Event",
+    "type": "task",
+    "date": "2026-08-15",
+    "start_time": "09:00",
+    "end_time": "10:00",
+    "location": "",
+    "description": "New Event (task) scheduled on Saturday, August 15 from 09:00 AM to 10:00 AM at ."
+  }
+]

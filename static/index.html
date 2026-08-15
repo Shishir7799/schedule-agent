@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Schedule Assistant · Agent Playground</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #161922; --accent: #6c8cff; --text: #e7e9ee;
+    --muted: #8a8f9c; --user: #6c8cff; --agent: #1f2430; --border: #262b38;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg); color: var(--text); height: 100vh; display: flex; flex-direction: column;
+  }
+  header {
+    padding: 16px 20px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  header h1 { font-size: 16px; margin: 0; font-weight: 600; }
+  header span { font-size: 12px; color: var(--muted); }
+  #chat { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+  .msg { max-width: 72%; padding: 10px 14px; border-radius: 12px; line-height: 1.45; white-space: pre-wrap; font-size: 14px; }
+  .msg.user { align-self: flex-end; background: var(--user); color: #fff; border-bottom-right-radius: 2px; }
+  .msg.agent { align-self: flex-start; background: var(--agent); border: 1px solid var(--border); border-bottom-left-radius: 2px; }
+  .trace { align-self: flex-start; max-width: 72%; font-size: 11px; color: var(--muted); background: transparent; border: 1px dashed var(--border); border-radius: 8px; padding: 6px 10px; }
+  #inputRow { display: flex; padding: 14px 20px; gap: 10px; border-top: 1px solid var(--border); }
+  #msgInput { flex: 1; background: var(--panel); border: 1px solid var(--border); color: var(--text); padding: 12px 14px; border-radius: 10px; font-size: 14px; }
+  #msgInput:focus { outline: none; border-color: var(--accent); }
+  button { background: var(--accent); border: none; color: #fff; padding: 0 20px; border-radius: 10px; cursor: pointer; font-size: 14px; }
+  button:hover { opacity: 0.9; }
+  .examples { padding: 0 20px 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .ex { font-size: 12px; color: var(--muted); border: 1px solid var(--border); padding: 6px 10px; border-radius: 16px; cursor: pointer; }
+  .ex:hover { border-color: var(--accent); color: var(--text); }
+</style>
+</head>
+<body>
+<header>
+  <h1>📅 Agentic RAG Schedule Assistant</h1>
+  <span id="backendTag">agent playground</span>
+</header>
+<div class="examples" id="examples"></div>
+<div id="chat"></div>
+<div id="inputRow">
+  <input id="msgInput" type="text" placeholder="Ask about your schedule, or add/move/cancel something..." />
+  <button id="sendBtn">Send</button>
+</div>
+
+<script>
+const chatEl = document.getElementById('chat');
+const inputEl = document.getElementById('msgInput');
+const sendBtn = document.getElementById('sendBtn');
+const backendTag = document.getElementById('backendTag');
+
+const examples = [
+  "What do I have scheduled tomorrow?",
+  "Am I free Friday afternoon?",
+  "Add a meeting on August 15 at 3 PM.",
+  "Move my meeting from 3 PM to 4 PM on August 15.",
+  "Cancel my meeting on August 15 at 4 PM"
+];
+const exWrap = document.getElementById('examples');
+examples.forEach(q => {
+  const chip = document.createElement('div');
+  chip.className = 'ex';
+  chip.textContent = q;
+  chip.onclick = () => { inputEl.value = q; sendMessage(); };
+  exWrap.appendChild(chip);
+});
+
+function addMsg(text, cls) {
+  const div = document.createElement('div');
+  div.className = 'msg ' + cls;
+  div.textContent = text;
+  chatEl.appendChild(div);
+  chatEl.scrollTop = chatEl.scrollHeight;
+}
+
+function addTrace(toolCalls) {
+  if (!toolCalls || toolCalls.length === 0) return;
+  const div = document.createElement('div');
+  div.className = 'trace';
+  div.textContent = toolCalls.map(tc => `🔧 ${tc.tool}(${JSON.stringify(tc.args)})`).join('\n');
+  chatEl.appendChild(div);
+  chatEl.scrollTop = chatEl.scrollHeight;
+}
+
+async function sendMessage() {
+  const message = inputEl.value.trim();
+  if (!message) return;
+  addMsg(message, 'user');
+  inputEl.value = '';
+  sendBtn.disabled = true;
+  try {
+    const res = await fetch('/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message })
+    });
+    const data = await res.json();
+    addTrace(data.tool_calls);
+    addMsg(data.reply || '(no reply)', 'agent');
+    backendTag.textContent = 'backend: ' + (data.backend || 'unknown');
+  } catch (e) {
+    addMsg('Error contacting the agent: ' + e, 'agent');
+  } finally {
+    sendBtn.disabled = false;
+  }
+}
+
+sendBtn.onclick = sendMessage;
+inputEl.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendMessage(); });
+
+addMsg("Hi! I'm your Schedule Assistant. Try one of the examples above, or ask me anything about your next 30 days.", 'agent');
+</script>
+</body>
+</html>
