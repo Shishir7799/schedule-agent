@@ -19,7 +19,7 @@ from datetime import datetime, timedelta
 
 from . import tools
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEy", "").strip()
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()  # best-effort default, not relied on below
 
 SYSTEM_INSTRUCTION = """You are a Schedule Assistant agent that manages a user's \
 calendar for the next 30 days. You have two tools:
@@ -98,9 +98,9 @@ class GeminiAgent:
         "gemini-1.5-flash",
     ]
 
-    def __init__(self):
+    def __init__(self, api_key: str):
         import google.generativeai as genai
-        genai.configure(api_key=GEMINI_API_KEY)
+        genai.configure(api_key=api_key)
         self.genai = genai
         self.model = None
         last_err = None
@@ -314,9 +314,11 @@ _agent_singleton = None
 def get_agent():
     global _agent_singleton
     if _agent_singleton is None:
-        if GEMINI_API_KEY:
+        api_key = os.environ.get("GEMINI_API_KEY", "").strip()
+        print(f"[agent] Fresh env check -> key_present={bool(api_key)} key_length={len(api_key)}")
+        if api_key:
             try:
-                _agent_singleton = SafeAgent(GeminiAgent(), RuleBasedAgent())
+                _agent_singleton = SafeAgent(GeminiAgent(api_key), RuleBasedAgent())
                 print(f"[agent] Using Gemini model: {_agent_singleton.primary.model_name}")
             except Exception as e:
                 print(f"[agent] Gemini init FAILED, falling back to rule-based. Reason: {e}")
